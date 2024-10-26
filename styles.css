@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f8ff; /* Color de fondo claro */
 }
 
 #loader {
@@ -41,6 +42,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    background-color: #ff4500; /* Color de fondo del menú */
 }
 
 nav ul li {
@@ -51,13 +53,16 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 10px 15px;
 }
 
 #landing {
     text-align: center;
-    padding: 50px 0;
-    background-color: #282c34;
-    color: white;
+    padding: 50px 20px;
+    background-color: #ffeb3b; /* Color de fondo de la sección landing */
+    color: #333; /* Color del texto */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .explore-button {
@@ -66,11 +71,13 @@ nav a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
 }
 
 .fun-facts {
     margin-top: 30px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
 }
@@ -82,4 +89,25 @@ nav a {
 .fun-facts ul {
     list-style: none;
     padding: 0;
+}
+
+.experience-gallery {
+    margin-top: 40px;
+}
+
+.experience-gallery h2 {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 30%; /* Ajusta el tamaño de las imágenes */
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
