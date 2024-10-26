@@ -128,9 +128,10 @@ body {
     color: black; /* Texto en negro */
 }
 
-.fact-item {
-    font-size: 1.5em; /* Tamaño de texto */
-    margin: 15px 0; /* Margen entre los elementos */
+.fun-facts-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 2em;
+    color: #333; /* Título más oscuro */
 }
 
 ul {
@@ -139,11 +140,15 @@ ul {
 }
 
 .fact-item {
-    opacity: 0; /* Ocultar inicialmente */
-    transform: translateY(20px); /* Desplazamiento inicial */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
-    font-size: 1.5em; /* Tamaño de texto */
     margin: 15px 0; /* Margen entre los elementos */
+    display: flex; /* Usar flexbox para alinear icono y texto */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.fact-icon {
+    width: 50px; /* Ajustar el tamaño del icono */
+    height: 50px; /* Ajustar el tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
 }
 
 .experience-gallery {
