@@ -131,7 +131,7 @@ body {
 .fun-facts-title {
     font-family: "Oswald", sans-serif;
     font-size: 2em;
-    color: #333; /* Título más oscuro */
+    color: black; /* Título más oscuro */
 }
 
 ul {
