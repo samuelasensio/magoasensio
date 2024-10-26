@@ -89,6 +89,7 @@ body {
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
     height: 100vh; /* Altura completa de la ventana */
+    margin-top:0;
 }
 
 .experience-title {
