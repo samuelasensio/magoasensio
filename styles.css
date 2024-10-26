@@ -215,6 +215,9 @@ ul {
 }
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
+    body{
+width:100%;
+    }
     .navbar-menu {
         flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
         align-items: center; /* Centrar los elementos */
