@@ -84,6 +84,11 @@ body {
     transform: translateY(50px); /* Desplazamiento inicial */
     transition: opacity 0.5s, transform 0.5s; /* Transición suave */
     font-family: "Oswald", sans-serif; /* Fuente */
+    display: flex; /* Usar flexbox para centrar */
+    flex-direction: column; /* Alinear en columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
 }
 
 .experience-title {
@@ -108,21 +113,7 @@ body {
 .explore-button:hover {
     background-color: #e64a19; /* Color al pasar el mouse */
 }
-.fun-facts {
-    margin-top: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-}
 
-.fun-facts h2 {
-    margin-bottom: 10px;
-}
-
-.fun-facts ul {
-    list-style: none;
-    padding: 0;
-}
 
 .experience-gallery {
     margin-top: 40px;
