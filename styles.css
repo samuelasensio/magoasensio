@@ -52,7 +52,8 @@ body {
 .navbar {
     background-color: #333; /* Color de fondo */
     padding: 20px; /* Espaciado interno */
-    width: 97.35%; /* Ancho completo */
+    width: 100%; /* Ancho completo */
+    position: relative; /* Posicionamiento relativo */
 }
 
 .navbar-menu {
@@ -73,15 +74,25 @@ body {
     text-transform: uppercase; /* Mayúsculas */
     padding: 10px 15px; /* Espaciado interno */
     transition: background-color 0.3s; /* Transición suave para el hover */
-      font-family: "Oswald", sans-serif;
-
+    font-family: "Oswald", sans-serif;
 }
 
 .navbar-menu a:hover {
     background-color: #555; /* Color de fondo al pasar el mouse */
-      font-family: "Oswald", sans-serif;
-
 }
+
+/* Estilos para el botón de menú hamburguesa */
+.navbar-toggle {
+    display: none; /* Ocultar por defecto */
+}
+
+.navbar-icon {
+    display: none; /* Ocultar por defecto */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    color: white; /* Color del icono */
+    font-size: 24px; /* Tamaño del icono */
+}
+
 .experience {
     background-color: black;
     color: white;
