@@ -90,7 +90,7 @@ body {
     flex-direction: column; /* Alinear en columna */
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
-    height: 100vh; /* Altura completa de la ventana */
+    height: 50vh; /* Altura completa de la ventana */
     margin-top:0;
 }
 
