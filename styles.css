@@ -37,25 +37,40 @@ header {
     height: auto;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #ff4500; /* Color de fondo del menú */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-nav ul li {
-    margin: 0 15px;
+.navbar {
+    background-color: #333; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px 15px;
+.navbar-menu {
+    list-style: none; /* Eliminar viñetas */
+    display: flex; /* Disposición horizontal */
+    justify-content: space-around; /* Espacio entre elementos */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
 }
 
+.navbar-menu li {
+    display: inline; /* Mostrar elementos en línea */
+}
+
+.navbar-menu a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    text-transform: uppercase; /* Mayúsculas */
+    padding: 10px 15px; /* Espaciado interno */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.navbar-menu a:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+}
 #landing {
     text-align: center;
     padding: 50px 20px;
