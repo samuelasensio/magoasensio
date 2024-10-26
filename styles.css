@@ -74,11 +74,25 @@ body {
     text-transform: uppercase; /* Mayúsculas */
     padding: 10px 15px; /* Espaciado interno */
     transition: background-color 0.3s; /* Transición suave para el hover */
-    font-family: "Oswald", sans-serif;
 }
 
 .navbar-menu a:hover {
     background-color: #555; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para el botón de menú hamburguesa */
+.navbar-icon {
+    display: none; /* Ocultar por defecto */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+
+/* Estilos para las barras del menú hamburguesa */
+.bar {
+    display: block;
+    width: 30px; /* Ancho de las barras */
+    height: 3px; /* Altura de las barras */
+    background-color: white; /* Color de las barras */
+    margin: 5px auto; /* Espaciado entre las barras */
 }
 
 /* Estilos para el botón de menú hamburguesa */
@@ -230,6 +244,7 @@ ul {
 width:100%;
     }
     @media (max-width: 768px) {
+    @media (max-width: 768px) {
     .navbar-menu {
         display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
         flex-direction: column; /* Cambiar a disposición vertical */
@@ -240,11 +255,15 @@ width:100%;
         background-color: #333; /* Color de fondo */
     }
 
-    .navbar-menu.active {
-        display: flex; /* Mostrar el menú cuando está activo */
+    .navbar-menu li {
+        text-align: center; /* Centrar texto en el menú */
     }
 
-    .navbar-toggle {
-        display: flex; /* Mostrar el botón de menú hamburguesa */
+    .navbar-icon.active + .navbar-menu {
+        display: flex; /* Mostrar el menú cuando el icono está activo */
+    }
+
+    .navbar-icon {
+        display: block; /* Mostrar el icono de menú hamburguesa */
     }
 }
