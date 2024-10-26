@@ -30,26 +30,44 @@ nav a {
     font-weight: bold;
 }
 
-#landing {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #282c34;
-    color: white;
+#nuestros-shows {
+    padding: 20px;
 }
 
-.explore-button {
+.show-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.show-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.show-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.more-info-button {
     background-color: #ff4500;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
     text-decoration: none;
+    border-radius: 5px;
 }
 
-section {
+#show-details {
     padding: 20px;
-    border-bottom: 1px solid #ccc;
 }
 
-.gallery img {
-    width: 30%;
-    margin: 5px;
+.show-detail-image {
+    width: 100%;
+    height: auto;
 }
