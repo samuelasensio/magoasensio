@@ -204,7 +204,7 @@ ul {
 }
 
 .logo {
-    width: 80px; /* Ajustar el tamaño de los logos */
+    width: 60px; /* Ajustar el tamaño de los logos a 60px */
     margin: 10px 0; /* Espaciado vertical entre los logos */
     opacity: 0.8; /* Opacidad para un efecto más suave */
     transition: opacity 0.3s; /* Transición suave para el efecto hover */
