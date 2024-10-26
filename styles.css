@@ -153,8 +153,8 @@ ul {
 }
 
 .fact-icon {
-    width: 60px; /* Ajustar el tamaño del icono */
-    height: 60px; /* Ajustar el tamaño del icono */
+    width: 80px; /* Ajustar el tamaño del icono */
+    height: 80px; /* Ajustar el tamaño del icono */
     margin-right: 10px; /* Espacio entre el icono y el texto */
 }
 .fact-item span {
