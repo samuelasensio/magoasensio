@@ -3,6 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f8ff; /* Color de fondo claro */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, currently
+                                   supported by Chrome, Opera, and Edge */
 }
 
 #loader {
