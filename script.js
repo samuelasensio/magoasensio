@@ -38,8 +38,5 @@ document.addEventListener("scroll", function() {
 const carouselInner = document.querySelector('.carousel-inner');
 const logos = document.querySelectorAll('.carousel-logo');
 const totalLogos = logos.length;
-document.getElementById('navbar-toggle').addEventListener('click', function() {
-    const menu = document.getElementById('navbar-menu');
-    menu.classList.toggle('active'); // Alternar la clase 'active' para mostrar/ocultar el menú
-});
+
 
