@@ -35,6 +35,8 @@ header {
 .header-image {
     width: 100%;
     height: auto;
+    display: block; /* Eliminar espacio debajo de la imagen */
+
 }
 
 body {
