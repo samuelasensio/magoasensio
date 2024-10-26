@@ -121,7 +121,30 @@ body {
 .explore-button:hover {
     background-color: #e64a19; /* Color al pasar el mouse */
 }
+.fun-facts {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto en negro */
+}
 
+.fun-facts h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2em;
+}
+
+ul {
+    list-style: none; /* Eliminar viñetas */
+    padding: 0; /* Sin padding */
+}
+
+.fact-item {
+    opacity: 0; /* Ocultar inicialmente */
+    transform: translateY(20px); /* Desplazamiento inicial */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
+    font-size: 1.5em; /* Tamaño de texto */
+    margin: 15px 0; /* Margen entre los elementos */
+}
 
 .experience-gallery {
     margin-top: 40px;
