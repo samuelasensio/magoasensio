@@ -141,9 +141,10 @@ ul {
 
 .fact-item {
     margin: 15px 0; /* Margen entre los elementos */
-    display: flex; /* Usar flexbox para alinear icono y texto */
-    align-items: center; /* Centrar verticalmente */
-    color:black
+    display: flex; /* Usar flexbox para centrar el contenido */
+    flex-direction: column; /* Colocar icono encima del texto */
+    align-items: center; /* Centrar horizontalmente */
+    color:black;
 }
 
 .fact-icon {
