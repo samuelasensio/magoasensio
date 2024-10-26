@@ -75,25 +75,39 @@ body {
       font-family: "Oswald", sans-serif;
 
 }
-#landing {
+.experience {
+    background-color: black;
+    color: white;
     text-align: center;
     padding: 50px 20px;
-    background-color: #ffeb3b; /* Color de fondo de la sección landing */
-    color: #333; /* Color del texto */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Ocultar inicialmente */
+    transform: translateY(50px); /* Desplazamiento inicial */
+    transition: opacity 0.5s, transform 0.5s; /* Transición suave */
+    font-family: "Oswald", sans-serif; /* Fuente */
+}
+
+.experience-title {
+    font-size: 2.5em; /* Tamaño más grande */
+}
+
+.experience-description {
+    font-size: 1.5em; /* Tamaño un poco más pequeño */
 }
 
 .explore-button {
-    background-color: #ff4500;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
     display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5722; /* Color del botón */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
 }
 
+.explore-button:hover {
+    background-color: #e64a19; /* Color al pasar el mouse */
+}
 .fun-facts {
     margin-top: 30px;
     background-color: rgba(255, 255, 255, 0.8);
