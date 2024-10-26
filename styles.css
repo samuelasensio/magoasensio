@@ -66,10 +66,14 @@ body {
     text-transform: uppercase; /* Mayúsculas */
     padding: 10px 15px; /* Espaciado interno */
     transition: background-color 0.3s; /* Transición suave para el hover */
+      font-family: "Oswald", sans-serif;
+
 }
 
 .navbar-menu a:hover {
     background-color: #555; /* Color de fondo al pasar el mouse */
+      font-family: "Oswald", sans-serif;
+
 }
 #landing {
     text-align: center;
