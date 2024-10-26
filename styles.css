@@ -157,7 +157,11 @@ ul {
     height: 50px; /* Ajustar el tamaño del icono */
     margin-right: 10px; /* Espacio entre el icono y el texto */
 }
+.fact-item span {
+    font-size: 1.5em; /* Aumentar el tamaño del texto de curiosidades */
+        font-family: "Oswald", sans-serif;
 
+}
 .experience-gallery {
     margin-top: 40px;
 }
