@@ -213,3 +213,68 @@ ul {
 .logo:hover {
     opacity: 1; /* Aumentar opacidad al pasar el ratón */
 }
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .experience-title {
+        font-size: 2em; /* Tamaño del título en pantallas pequeñas */
+    }
+
+    .experience-description {
+        font-size: 1.2em; /* Tamaño de la descripción en pantallas pequeñas */
+    }
+
+    .explore-button {
+        padding: 8px 16px; /* Ajustar el tamaño del botón */
+    }
+
+    .fun-facts-title {
+        font-size: 1.5em; /* Tamaño del título en pantallas pequeñas */
+    }
+
+    .fact-item {
+        font-size: 14px; /* Tamaño de fuente en pantallas pequeñas */
+    }
+
+    .gallery img {
+        width: 45%; /* Ajustar el tamaño de las imágenes en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .experience {
+        padding: 30px 10px; /* Ajustar el espaciado en pantallas móviles */
+    }
+
+    .experience-title {
+        font-size: 1.5em; /* Tamaño del título en móviles */
+    }
+
+    .experience-description {
+        font-size: 1em; /* Tamaño de la descripción en móviles */
+    }
+
+    .fun-facts {
+        padding: 30px 10px; /* Ajustar el espaciado en móviles */
+    }
+
+    .fact-item {
+        font-size: 12px; /* Tamaño de fuente en móviles */
+    }
+
+    .gallery img {
+        width: 90%; /* Ajustar el tamaño de las imágenes en móviles */
+    }
+
+    .trusted-title {
+        font-size: 1.5em; /* Tamaño del título en móviles */
+    }
+
+    .logo {
+        width: 40px; /* Ajustar el tamaño de los logos en móviles */
+    }
+}
