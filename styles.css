@@ -193,11 +193,13 @@ ul {
 .trusted-title {
     font-size: 2em; /* Tamaño del título */
     margin-bottom: 20px; /* Margen inferior */
+    text-align: center;
 }
 
 .logo-container {
     display: flex; /* Usar flexbox para alinear los logos en línea */
     justify-content: center; /* Centrar los logos horizontalmente */
+    align-items:center;
     flex-wrap: wrap; /* Permitir que los logos se ajusten en varias líneas si es necesario */
 }
 
