@@ -137,6 +137,8 @@ body {
 ul {
     list-style: none; /* Eliminar viñetas */
     padding: 0; /* Sin padding */
+    display: flex; /* Usar flexbox para alinear los elementos en línea */
+    justify-content: center; /* Centrar los elementos horizontalmente */
 }
 
 .fact-item {
