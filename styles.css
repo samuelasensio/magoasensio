@@ -147,6 +147,8 @@ ul {
     flex-direction: column; /* Colocar icono encima del texto */
     align-items: center; /* Centrar horizontalmente */
     color:black;
+    margin: 30px; /* Aumentar el margen entre los elementos */
+
 }
 
 .fact-icon {
