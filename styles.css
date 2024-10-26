@@ -130,7 +130,7 @@ body {
 
 .fun-facts-title {
     font-family: "Oswald", sans-serif;
-    font-size: 2em;
+    font-size: 15px;
     color: #333; /* Título más oscuro */
 }
 
@@ -148,7 +148,8 @@ ul {
     align-items: center; /* Centrar horizontalmente */
     color:black;
     margin: 30px; /* Aumentar el margen entre los elementos */
-
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
 }
 
 .fact-icon {
