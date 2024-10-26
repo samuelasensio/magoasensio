@@ -129,9 +129,6 @@ body {
 }
 
 .fact-item {
-    opacity: 0; /* Ocultar inicialmente */
-    transform: translateY(20px); /* Desplazamiento inicial */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
     font-size: 1.5em; /* Tamaño de texto */
     margin: 15px 0; /* Margen entre los elementos */
 }
