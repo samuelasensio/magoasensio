@@ -18,12 +18,9 @@
     </div>
 
     
- <nav class="navbar">
-        <div class="navbar-icon">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-label">
-                <i class="fas fa-bars"></i>
-            </label>
+<nav class="navbar">
+        <div class="navbar-icon" id="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
         <ul class="navbar-menu">
             <li><a href="#home">INICIO</a></li>
@@ -32,6 +29,17 @@
             <li><a href="#contact">CONTACTO</a></li>
         </ul>
     </nav>
+    
+    <script>
+        // JavaScript para alternar el menú
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+
     <header>
         <img src="header.png" alt="Header" class="header-image">
     </header>
