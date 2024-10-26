@@ -47,7 +47,7 @@ header {
 .navbar {
     background-color: #333; /* Color de fondo */
     padding: 10px 20px; /* Espaciado interno */
-    width: 97.35%; /* Ancho completo */
+    width: 100%; /* Ancho completo */
     position: relative; /* Posicionamiento relativo */
 }
 
@@ -219,7 +219,7 @@ ul {
     body{
 width:100%;
     }
-   .navbar-menu {
+  .navbar-menu {
         display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
         flex-direction: column; /* Cambiar a disposición vertical */
         width: 100%; /* Ancho completo */
@@ -227,7 +227,8 @@ width:100%;
         top: 60px; /* Ajustar según la altura de la barra de navegación */
         left: 0; /* Alinear a la izquierda */
         background-color: #333; /* Color de fondo */
-        z-index: 1; /* Asegurar que el menú esté por encima de otros elementos */
+        z-index: 10; /* Asegurar que el menú esté por encima de otros elementos */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mayor visibilidad */
     }
 
     .navbar-menu li {
@@ -240,6 +241,9 @@ width:100%;
     }
 
     .navbar-icon {
+        display: block; /* Mostrar el icono de menú hamburguesa */
+    }
+}
         display: block; /* Mostrar el icono de menú hamburguesa */
     }
 }
