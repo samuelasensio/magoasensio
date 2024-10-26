@@ -64,7 +64,7 @@ header {
     display: flex; /* Disposición horizontal por defecto */
     justify-content: space-around; /* Espacio entre elementos */
     margin: 0; /* Sin margen */
-    padding: 0; /* Sin padding */
+    padding: 10px; /* Sin padding */
 }
 
 .navbar-menu li {
