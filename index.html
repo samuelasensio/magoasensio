@@ -7,6 +7,10 @@
     <title>Mi Página Interactiva</title>
 </head>
 <body>
+    <div id="loader">
+        <img src="sombrero-magia.png" alt="Cargando..." class="loader-image">
+    </div>
+
     <header>
         <img src="header-image.jpg" alt="Header" class="header-image">
         <nav>
@@ -22,7 +26,23 @@
 
     <section id="landing">
         <h1>¡Vive la Experiencia Inigualable de Nuestros Shows!</h1>
+        <p>¡Prepárate para un viaje mágico lleno de sorpresas y entretenimiento!</p>
         <a href="sobre-mi.html" class="explore-button">Explora Ahora</a>
+        <div class="fun-facts">
+            <h2>Datos Divertidos</h2>
+            <ul>
+                <li>🎩 ¡Más de 100 shows realizados!</li>
+                <li>✨ ¡Más de 10,000 espectadores encantados!</li>
+                <li>🎉 ¡Diversión garantizada para toda la familia!</li>
+            </ul>
+        </div>
     </section>
+
+    <script>
+        // Loader
+        window.onload = function() {
+            document.getElementById('loader').style.display = 'none';
+        };
+    </script>
 </body>
 </html>
