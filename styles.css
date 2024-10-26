@@ -218,43 +218,22 @@ ul {
     body{
 width:100%;
     }
+    @media (max-width: 768px) {
     .navbar-menu {
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        align-items: center; /* Centrar los elementos */
+        display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
+        flex-direction: column; /* Cambiar a disposición vertical */
+        width: 100%; /* Ancho completo */
+        position: absolute; /* Posicionamiento absoluto */
+        top: 60px; /* Ajustar según la altura de la barra de navegación */
+        left: 0; /* Alinear a la izquierda */
+        background-color: #333; /* Color de fondo */
     }
 
-    .experience-title {
-        font-size: 2em; /* Ajustar el tamaño del título */
+    .navbar-menu.active {
+        display: flex; /* Mostrar el menú cuando está activo */
     }
 
-    .experience-description {
-        font-size: 1.2em; /* Ajustar el tamaño de la descripción */
-    }
-
-    .fact-item {
-        max-width: 100%; /* Permitir que los elementos se expandan en pantallas pequeñas */
-    }
-
-    .gallery img {
-        width: calc(50% - 10px); /* Ajustar a 50% en pantallas pequeñas */
-    }
-}
-
-@media (max-width: 480px) {
-    .experience-title {
-        font-size: 1.8em; /* Ajustar el tamaño del título */
-    }
-
-    .experience-description {
-        font-size: 1em; /* Ajustar el tamaño de la descripción */
-    }
-
-    .navbar-menu a {
-        padding: 10px; /* Ajustar el padding */
-        font-size: 0.9em; /* Ajustar el tamaño de la fuente */
-    }
-
-    .gallery img {
-        width: 100%; /* Ajustar a 100% en pantallas muy pequeñas */
+    .navbar-toggle {
+        display: flex; /* Mostrar el botón de menú hamburguesa */
     }
 }
