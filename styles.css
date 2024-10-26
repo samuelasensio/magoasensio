@@ -188,6 +188,8 @@ ul {
     text-align: center; /* Centrar el texto */
     padding: 50px 20px; /* Espaciado interno */
     font-family: "Oswald", sans-serif; /* Aplicar la fuente Oswald */
+    border-radius: 10px; /* Bordes redondeados para un aspecto más suave */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
 }
 
 .trusted-title {
@@ -196,13 +198,17 @@ ul {
 }
 
 .logo-container {
-    display: flex; /* Usar flexbox para alinear los logos en línea */
+    display: flex; /* Usar flexbox para alinear los logos en columna */
     flex-direction: column; /* Colocar los logos en columna */
     align-items: center; /* Centrar los logos horizontalmente */
-    margin:30px;
 }
 
 .logo {
-    width: 60px; /* Ajustar el tamaño de los logos */
+    width: 80px; /* Ajustar el tamaño de los logos */
     margin: 10px 0; /* Espaciado vertical entre los logos */
+    opacity: 0.8; /* Opacidad para un efecto más suave */
+    transition: opacity 0.3s; /* Transición suave para el efecto hover */
 }
+
+.logo:hover {
+    opacity: 1; /* Aumentar opacidad al pasar el ratón */
