@@ -182,3 +182,38 @@ ul {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.trusted-section {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto en blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 50px 20px; /* Espaciado interno */
+}
+
+.trusted-title {
+    font-size: 2em; /* Tamaño del título */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.carousel {
+    overflow: hidden; /* Ocultar el desbordamiento */
+    position: relative; /* Posicionamiento relativo para el carrusel */
+}
+
+.carousel-inner {
+    display: flex; /* Usar flexbox para alinear los logos en línea */
+    animation: scroll 10s linear infinite; /* Animación de desplazamiento */
+}
+
+.carousel-logo {
+    width: 150px; /* Ajustar el tamaño de los logos */
+    margin: 0 20px; /* Espaciado entre los logos */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Comienza en la posición inicial */
+    }
+    100% {
+        transform: translateX(-100%); /* Desplazarse completamente a la izquierda */
+    }
+}
