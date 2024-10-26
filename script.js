@@ -35,3 +35,12 @@ document.addEventListener("scroll", function() {
         document.addEventListener('dragstart', function(e) {
             e.preventDefault();
         });
+const carouselInner = document.querySelector('.carousel-inner');
+const logos = document.querySelectorAll('.carousel-logo');
+const totalLogos = logos.length;
+
+// Duplicar los logos para crear un efecto de carrusel infinito
+for (let i = 0; i < totalLogos; i++) {
+    const clone = logos[i].cloneNode(true);
+    carouselInner.appendChild(clone);
+}
