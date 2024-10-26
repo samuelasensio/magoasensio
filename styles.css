@@ -143,6 +143,7 @@ ul {
     margin: 15px 0; /* Margen entre los elementos */
     display: flex; /* Usar flexbox para alinear icono y texto */
     align-items: center; /* Centrar verticalmente */
+    color:black
 }
 
 .fact-icon {
