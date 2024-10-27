@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.company-info {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si es necesario */
+    justify-content: center; /* Centra las imágenes en la galería */
+}
+
+.gallery-item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    max-width: 400px; /* Limita el ancho máximo de cada item */
+    flex: 1 1 300px; /* Permite que los elementos se ajusten en diferentes tamaños de pantalla */
+}
+
+.gallery-img {
+    border: 5px solid transparent; /* Espacio para el borde que simula la mancha */
+    background: url('https://www.transparenttextures.com/patterns/paper.gif'); /* Patrones de fondo */
+    border-radius: 15px; /* Bordes redondeados */
+    margin-right: 20px; /* Espaciado entre imagen y texto */
+    transition: opacity 0.3s;
+    position: relative; /* Necesario para el pseudo-elemento */
+    width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
+    max-width: 150px; /* Limita el ancho máximo de la imagen */
+}
+
+.gallery-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    background: rgba(255, 0, 0, 0.5); /* Color de la mancha */
+    z-index: -1; /* Coloca el pseudo-elemento detrás de la imagen */
+    transform: scale(1.1); /* Aumenta el tamaño de la mancha */
+}
+
+.gallery-img:hover {
+    opacity: 0.8; /* Efecto de hover */
+}
+
+.text-container {
+    max-width: 250px; /* Limita el ancho del texto */
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 45%; /* Dos elementos por fila en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%; /* Un elemento por fila en pantallas muy pequeñas */
+        flex-direction: column; /* Cambia la dirección a columna para mejor visualización */
+        align-items: center; /* Centra el contenido */
+    }
+
+    .gallery-img {
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+        margin-bottom: 10px; /* Agrega margen inferior para separación */
+    }
+}
