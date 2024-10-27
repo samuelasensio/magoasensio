@@ -44,11 +44,21 @@ header {
 
 }
 
+* {
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto total */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .navbar {
     background-color: #333; /* Color de fondo */
     padding: 10px 20px; /* Espaciado interno */
-    width: 100%; /* Ancho completo */
-    position: relative; /* Posicionamiento relativo */
+    display: flex; /* Usar flexbox para la barra de navegación */
+    justify-content: space-between; /* Espacio entre el icono y el menú */
+    align-items: center; /* Centrar verticalmente */
 }
 
 .navbar-icon {
@@ -68,7 +78,8 @@ header {
 }
 
 .navbar-menu li {
-    display: inline; /* Mostrar elementos en línea */
+    text-align: center; /* Centrar texto en el menú */
+    margin: 0 15px; /* Añadir margen horizontal para separar los elementos */
 }
 
 .navbar-menu a {
