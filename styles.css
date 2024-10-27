@@ -179,12 +179,6 @@ body {
     }
 }
 /*Sobre mi*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 header {
     text-align: center;
     padding: 20px;
@@ -202,7 +196,7 @@ header {
     display: flex;
     flex-direction: column; /* Coloca la imagen encima del texto */
     align-items: center; /* Centra el contenido */
-    max-width: 400px; /* Limita el ancho máximo del contenedor */
+    max-width: 600px; /* Limita el ancho máximo del contenedor */
     margin: 20px;
 }
 
@@ -213,16 +207,17 @@ header {
     transition: opacity 0.3s;
     position: relative; /* Necesario para el pseudo-elemento */
     width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
-    max-width: 300px; /* Limita el ancho máximo de la imagen */
+    max-width: 500px; /* Limita el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .gallery-img::before {
     content: '';
     position: absolute;
-    top: -10px; /* Ajusta la posición para simular ondas */
-    left: -10px; /* Ajusta la posición para simular ondas */
-    right: -10px; /* Ajusta la posición para simular ondas */
-    bottom: -10px; /* Ajusta la posición para simular ondas */
+    top: -15px; /* Ajusta la posición para simular ondas */
+    left: -15px; /* Ajusta la posición para simular ondas */
+    right: -15px; /* Ajusta la posición para simular ondas */
+    bottom: -15px; /* Ajusta la posición para simular ondas */
     border-radius: 15px; /* Bordes redondeados */
     background: rgba(255, 0, 0, 0.5); /* Color de la mancha */
     z-index: -1; /* Coloca el pseudo-elemento detrás de la imagen */
@@ -255,5 +250,9 @@ footer {
 @media (max-width: 768px) {
     .gallery-item {
         max-width: 90%; /* Aumenta el ancho en pantallas más pequeñas */
+    }
+
+    .gallery-img {
+        max-width: 100%; /* Asegura que la imagen ocupe el ancho completo en pantallas pequeñas */
     }
 }
