@@ -67,18 +67,27 @@ body {
 }
 
 .header {
+    position: relative;
     width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
 }
 
-.header h1 {
+.header-img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.header-content {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.header-content h1 {
     font-size: 2.5em;
 }
 
-.header p {
+.header-content p {
     margin: 20px 0;
     font-size: 1.2em;
 }
@@ -141,11 +150,11 @@ body {
         display: flex; /* Muestra el botón de menú en móviles */
     }
 
-    .header h1 {
+    .header-content h1 {
         font-size: 2em;
     }
 
-    .header p {
+    .header-content p {
         font-size: 1em;
     }
     
