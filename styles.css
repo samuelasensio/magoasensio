@@ -111,17 +111,18 @@ body {
 
 .gallery {
     display: flex;
-    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas si es necesario */
     justify-content: center; /* Centra las imágenes en la galería */
-    padding: 20px; /* Espaciado alrededor de la galería */
+    padding: 20px;
 }
 
 .gallery-img {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
+    border-radius: 15px;
+    border: 2px solid black;
+    margin: 10px;
+    transition: opacity 0.3s;
+    width: 200px; /* Establece un ancho fijo para las imágenes */
     height: auto; /* Mantiene la proporción de la imagen */
-    margin: 10px; /* Espaciado entre las imágenes */
-    border-radius: 10px; /* Bordes redondeados para un mejor aspecto */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
 }
 
 .gallery-img:hover {
