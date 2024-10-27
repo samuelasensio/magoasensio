@@ -52,7 +52,7 @@
         <p>&copy; 2024 Todos los derechos reservados.</p>
     </footer>
 
-    <script>
+      <script>
         const mobileMenu = document.getElementById('mobile-menu');
         const navLinks = document.querySelector('.nav-links');
 
@@ -61,7 +61,9 @@
         });
 
         window.onload = function() {
-            document.querySelector('.loader').style.display = 'none';
+            setTimeout(() => {
+                document.querySelector('.loader').style.display = 'none'; // Oculta el loader después de un tiempo
+            }, 3000); // Ajusta el tiempo que desees (en milisegundos)
         };
     </script>
 </body>
