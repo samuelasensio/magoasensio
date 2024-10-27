@@ -49,7 +49,6 @@ header {
     padding: 10px 20px; /* Espaciado interno */
     width: 100%; /* Ancho completo */
     position: relative; /* Posicionamiento relativo */
-    padding:20px;
 }
 
 .navbar-icon {
@@ -65,7 +64,7 @@ header {
     display: flex; /* Disposición horizontal por defecto */
     justify-content: space-around; /* Espacio entre elementos */
     margin: 0; /* Sin margen */
-    padding: 20px; /* Sin padding */
+    padding: 0; /* Sin padding */
 }
 
 .navbar-menu li {
