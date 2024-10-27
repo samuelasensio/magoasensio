@@ -52,14 +52,14 @@ body {
 
 .navbar {
     background-color: #333; /* Color de fondo */
-    padding: 10px 20px; /* Espaciado interno */
+    padding: 15px 20px; /* Espaciado interno (arriba y abajo, izquierda y derecha) */
     display: flex; /* Usar flexbox para la barra de navegación */
     justify-content: space-between; /* Espacio entre el icono y el menú */
     align-items: center; /* Centrar verticalmente */
 }
 
 .navbar-icon {
-    display: none; /* Mostrar el icono de menú */
+    display: block; /* Mostrar el icono de menú */
     cursor: pointer; /* Cambiar el cursor al pasar el mouse */
     color: white; /* Color del icono */
     font-size: 24px; /* Tamaño del icono */
@@ -71,7 +71,8 @@ body {
     display: flex; /* Disposición horizontal por defecto */
     margin: 0; /* Sin margen */
     padding: 0; /* Sin padding para evitar desbordamiento */
-    align-items:center;
+    flex-grow: 1; /* Permitir que el menú ocupe el espacio disponible */
+    justify-content: center; /* Centrar los elementos del menú */
 }
 
 .navbar-menu li {
