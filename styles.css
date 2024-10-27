@@ -26,7 +26,9 @@ body {
     height: auto;
     animation: spin 6s linear infinite; /* Animación de giro */
 }
-
+.logo{
+    color:white;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
