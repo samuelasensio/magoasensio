@@ -73,13 +73,13 @@ header {
     display: flex; /* Disposición horizontal por defecto */
     justify-content: space-around; /* Espacio entre elementos */
     margin: 0; /* Sin margen */
-    padding: 10px 20px; /* Espaciado interno (arriba y abajo, izquierda y derecha) */
+    padding: 0; /* Sin padding para evitar desbordamiento */
     flex: 2; /* Permitir que el menú ocupe más espacio */
 }
 
 .navbar-menu li {
     text-align: center; /* Centrar texto en el menú */
-    display:inline;
+    display: inline; /* Asegurar que los elementos de la lista estén en línea */
 }
 
 .navbar-menu a {
