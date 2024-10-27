@@ -228,7 +228,7 @@ ul {
     body{
 width:100%;
     }
-   .navbar-menu {
+  .navbar-menu {
         display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
         flex-direction: column; /* Cambiar a disposición vertical */
         width: 100%; /* Ancho completo */
@@ -246,30 +246,11 @@ width:100%;
     .navbar-icon {
         display: block; /* Mostrar el icono de menú hamburguesa */
     }
-    .fact-item {
-        flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho */
-        text-align: center; /* Centrar el texto en cada elemento */
-    }
 }
 
-    ul {
-        flex-direction: column; /* Cambiar a disposición vertical */
-        align-items: center; /* Centrar los elementos */
+/* Ocultar el icono del menú en pantallas grandes */
+@media (min-width: 769px) {
+    .navbar-icon {
+        display: none; /* Ocultar el icono de menú hamburguesa en pantallas grandes */
     }
-
-    .fact-item {
-        flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho */
-        text-align: center; /* Centrar el texto en cada elemento */
-    }
-}
- .gallery {
-        flex-direction: column; /* Cambiar a disposición vertical */
-        align-items: center; /* Centrar las imágenes */
-    }
-
-    .gallery img {
-        width: 100%; /* Asegurar que cada imagen ocupe el 100% del ancho */
-        max-width: none; /* Eliminar el ancho máximo para que ocupe todo el ancho disponible */
-    }
-}
 }
