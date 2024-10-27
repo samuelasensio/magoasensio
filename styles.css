@@ -48,11 +48,6 @@ header {
     box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto total */
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 .navbar {
     background-color: #333; /* Color de fondo */
     padding: 10px 20px; /* Espaciado interno */
@@ -230,7 +225,7 @@ ul {
     body{
 width:100%;
     }
- .navbar-menu {
+  .navbar-menu {
         display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
         flex-direction: column; /* Cambiar a disposición vertical */
         width: 100%; /* Ancho completo */
