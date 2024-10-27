@@ -79,7 +79,6 @@ header {
 
 .navbar-menu li {
     text-align: center; /* Centrar texto en el menú */
-    flex: 1; /* Permitir que cada elemento ocupe el mismo espacio */
 }
 
 .navbar-menu a {
