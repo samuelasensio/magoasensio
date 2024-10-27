@@ -73,7 +73,7 @@ header {
     display: flex; /* Disposición horizontal por defecto */
     justify-content: space-around; /* Espacio entre elementos */
     margin: 0; /* Sin margen */
-    padding: 0; /* Sin padding */
+    padding: 10px 20px; /* Espaciado interno (arriba y abajo, izquierda y derecha) */
     flex: 2; /* Permitir que el menú ocupe más espacio */
 }
 
@@ -85,7 +85,7 @@ header {
     color: white; /* Color del texto */
     text-decoration: none; /* Sin subrayado */
     text-transform: uppercase; /* Mayúsculas */
-    padding: 15px 0; /* Espaciado interno arriba y abajo */
+    padding: 10px 15px; /* Espaciado interno arriba y abajo, y a los lados */
     display: block; /* Hacer que el enlace ocupe todo el espacio del li */
     transition: background-color 0.3s; /* Transición suave para el hover */
 }
