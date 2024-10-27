@@ -44,16 +44,11 @@ header {
 
 }
 
-* {
-    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto total */
-}
-
 .navbar {
     background-color: #333; /* Color de fondo */
     padding: 10px 20px; /* Espaciado interno */
-    display: flex; /* Usar flexbox para la barra de navegación */
-    justify-content: space-between; /* Espacio entre el icono y el menú */
-    align-items: center; /* Centrar verticalmente */
+    width: 100%; /* Ancho completo */
+    position: relative; /* Posicionamiento relativo */
 }
 
 .navbar-icon {
@@ -73,8 +68,7 @@ header {
 }
 
 .navbar-menu li {
-    text-align: center; /* Centrar texto en el menú */
-    margin: 0 15px; /* Añadir margen horizontal para separar los elementos */
+    display: inline; /* Mostrar elementos en línea */
 }
 
 .navbar-menu a {
@@ -88,7 +82,6 @@ header {
 .navbar-menu a:hover {
     background-color: #555; /* Color de fondo al pasar el mouse */
 }
-
 .experience {
     background-color: black;
     color: white;
