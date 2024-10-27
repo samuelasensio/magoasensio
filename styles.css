@@ -24,7 +24,7 @@ body {
 .loader-img {
     width: 100px; /* Ajusta el tamaño según sea necesario */
     height: auto;
-    animation: spin 1s linear infinite; /* Animación de giro */
+    animation: spin 6s linear infinite; /* Animación de giro */
 }
 
 .navbar {
