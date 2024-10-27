@@ -256,4 +256,14 @@ width:100%;
     .navbar-icon {
         display: block; /* Mostrar el icono de menú hamburguesa */
     }
+    ul {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: center; /* Centrar los elementos */
+    }
+
+    .fact-item {
+        flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho */
+        text-align: center; /* Centrar el texto en cada elemento */
+    }
+}
 }
