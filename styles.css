@@ -293,4 +293,14 @@ width:100%;
         text-align: center; /* Centrar el texto en cada elemento */
     }
 }
+ .gallery {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: center; /* Centrar las imágenes */
+    }
+
+    .gallery img {
+        width: 100%; /* Asegurar que cada imagen ocupe el 100% del ancho */
+        max-width: none; /* Eliminar el ancho máximo para que ocupe todo el ancho disponible */
+    }
+}
 }
