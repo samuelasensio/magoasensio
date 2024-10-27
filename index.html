@@ -12,83 +12,51 @@
     <script src="https://kit.fontawesome.com/7f92f1169b.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
-    <div id="loader">
-        <img src="sombrero.jpg" alt="Cargando..." class="loader-image">
+<div class="loader">
+        <img src="sombrero.png" alt="Cargando..." class="loader-img">
     </div>
 
-    
- <nav class="navbar">
-        <div class="navbar-icon" id="menu-toggle">
-            <i class="fas fa-bars"></i>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i> <!-- Icono de menú hamburguesa -->
         </div>
-        <ul class="navbar-menu">
-            <li><a href="#home">INICIO</a></li>
-            <li><a href="#about">SOBRE NOSOTROS</a></li>
-            <li><a href="#services">SERVICIOS</a></li>
-            <li><a href="#contact">CONTACTO</a></li>
+        <ul class="nav-links">
+            <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i> Acerca</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contacto</a></li>
         </ul>
     </nav>
 
-    <script>
-        // JavaScript para manejar el menú hamburguesa
-        const menuToggle = document.getElementById('menu-toggle');
-        const navbarMenu = document.getElementById('navbar-menu');
-
-        menuToggle.addEventListener('click', () => {
-            navbarMenu.classList.toggle('active'); // Alternar la clase 'active' en el menú
-        });
-    </script>
-
-    <header>
-        <img src="header.png" alt="Header" class="header-image">
+    <header class="header">
+        <h1>Vive la experiencia inigualable de nuestros shows</h1>
+        <p>Prepárate para un viaje lleno de sorpresas y entretenimiento</p>
+        <a href="#" class="btn">¡Descubre más!</a>
     </header>
 
- <section class="experience" id="experience">
-        <h1 class="experience-title">¡Vive la Experiencia Inigualable de Nuestros Shows!</h1>
-        <p class="experience-description">¡Prepárate para un viaje mágico lleno de sorpresas y entretenimiento!</p>
-        <a href="#explore" class="explore-button">Explora Ahora</a>
-    </section>
-    
-<div class="fun-facts" id="fun-facts">
-        <h2 class="fun-facts-title">Datos Divertidos</h2>
-        <ul>
-            <li class="fact-item">
-                <img src="iconoshow.png" alt="Icono de shows" class="fact-icon">
-                <span>¡Más de 100 shows<br> realizados!</span>
-            </li>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <li class="fact-item">
-                <img src="icon2.png" alt="Icono de espectadores" class="fact-icon">
-                <span>¡Más de 10,000 espectadores <br> encantados!</span>
-            </li>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <li class="fact-item">
-                <img src="icon3.png" alt="Icono de diversión" class="fact-icon">
-                <span>¡Diversión garantizada para <br> toda la familia!</span>
-            </li>
-        </ul>
-    </div>
-
-        <div class="experience-gallery">
-            <h2>Otras Experiencias</h2>
-            <div class="gallery">
-                <img src="imagen2.jpg" alt="Experiencia 1">
-                <img src="experiencia2.jpg" alt="Experiencia 2">
-                <img src="experiencia3.jpg" alt="Experiencia 3">
-            </div>
-        </div>
+    <section class="gallery">
+        <img src="image1.jpg" alt="Imagen 1" class="gallery-img">
+        <img src="image2.jpg" alt="Imagen 2" class="gallery-img">
+        <img src="image3.jpg" alt="Imagen 3" class="gallery-img">
+        <img src="image4.jpg" alt="Imagen 4" class="gallery-img">
     </section>
 
-<script>
-    // Loader
-    document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-            document.getElementById('loader').style.display = 'none';
-        }, 5000); // Cambia 3000 por el tiempo en milisegundos que desees (3000 ms = 3 segundos)
-    });
-</script>
-        <script src="script.js"></script>
+    <footer class="footer">
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+    </footer>
 
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        window.onload = function() {
+            document.querySelector('.loader').style.display = 'none';
+        };
+    </script>
 </body>
 </html>
