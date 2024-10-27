@@ -228,7 +228,7 @@ ul {
     body{
 width:100%;
     }
-    .navbar-menu {
+     .navbar-menu {
         display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
         flex-direction: column; /* Cambiar a disposición vertical */
         width: 100%; /* Ancho completo */
@@ -236,19 +236,15 @@ width:100%;
         top: 60px; /* Ajustar según la altura de la barra de navegación */
         left: 0; /* Alinear a la izquierda */
         background-color: #333; /* Color de fondo */
-    }
-
-    .navbar-menu li {
-        text-align: center; /* Centrar texto en el menú */
-        width: 100%; /* Ancho completo para cada elemento */
-    }
-
-    .navbar-menu.active {
-        display: flex; /* Mostrar el menú cuando está activo */
+        z-index: 10; /* Asegurar que el menú esté por encima de otros elementos */
     }
 
     .navbar-icon {
         display: block; /* Mostrar el icono de menú hamburguesa */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Mostrar el menú cuando está activo */
     }
 }
     .fact-item {
