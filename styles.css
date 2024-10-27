@@ -79,6 +79,7 @@ header {
 
 .navbar-menu li {
     text-align: center; /* Centrar texto en el menú */
+    display:inline;
 }
 
 .navbar-menu a {
