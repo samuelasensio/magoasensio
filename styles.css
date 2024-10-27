@@ -246,6 +246,7 @@ width:100%;
         text-align: center; /* Centrar texto en el menú */
         width: 100%; /* Ancho completo para cada elemento */
         margin: 10px 0; /* Añadir margen vertical para separar los elementos */
+        align-items:center;
     }
 
     .navbar-menu.active {
