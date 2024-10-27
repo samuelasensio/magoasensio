@@ -60,11 +60,12 @@
             navLinks.classList.toggle('active');
         });
 
-        window.onload = function() {
-            setTimeout(() => {
-                document.querySelector('.loader').style.display = 'none'; // Oculta el loader después de un tiempo
-            }, 6000); // Ajusta el tiempo que desees (en milisegundos)
-        };
+       window.onload = function() {
+    console.log("Page loaded, showing loader for 3 seconds");
+    setTimeout(() => {
+        document.querySelector('.loader').style.display = 'none'; // Oculta el loader después de un tiempo
+    }, 6000); // Ajusta el tiempo que desees (en milisegundos)
+};
     </script>
 </body>
 </html>
