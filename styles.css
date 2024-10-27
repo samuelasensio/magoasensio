@@ -230,7 +230,7 @@ ul {
     body{
 width:100%;
     }
-  .navbar-menu {
+ .navbar-menu {
         display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
         flex-direction: column; /* Cambiar a disposición vertical */
         width: 100%; /* Ancho completo */
@@ -243,8 +243,8 @@ width:100%;
     }
 
     .navbar-menu li {
-        text-align: center; /* Centrar texto en el menú */
         width: 100%; /* Ancho completo para cada elemento */
+        margin: 10px 0; /* Añadir margen vertical para separar los elementos */
     }
 
     .navbar-menu.active {
