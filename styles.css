@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Oswald', sans-serif;
+        overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
 .container {
