@@ -38,8 +38,24 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <p class="footer-text">&copy; 2024 Nuestra Compañía. Todos los derechos reservados.</p>
+     <footer class="footer">
+        <p>&copy; 2024 Todos los derechos reservados.</p>
     </footer>
+
+      <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+       window.onload = function() {
+    console.log("Page loaded, showing loader for 3 seconds");
+    setTimeout(() => {
+        document.querySelector('.loader').style.display = 'none'; // Oculta el loader después de un tiempo
+    }, 6000); // Ajusta el tiempo que desees (en milisegundos)
+};
+    </script>
 </body>
 </html>
