@@ -229,7 +229,7 @@ ul {
     body{
 width:100%;
     }
-   .navbar-menu {
+ .navbar-menu {
         display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
         flex-direction: column; /* Cambiar a disposición vertical */
         width: 100%; /* Ancho completo */
@@ -239,14 +239,13 @@ width:100%;
         background-color: #333; /* Color de fondo */
         z-index: 10; /* Asegurar que el menú esté por encima de otros elementos */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mayor visibilidad */
-        padding: 10px 20px; /* Espaciado interno (arriba y abajo, izquierda y derecha) */
+        padding: 10px 0; /* Espaciado interno (arriba y abajo) */
     }
 
     .navbar-menu li {
         text-align: center; /* Centrar texto en el menú */
         width: 100%; /* Ancho completo para cada elemento */
-        margin: 10px 0; /* Añadir margen vertical para separar los elementos */
-        align-items: center; /* Centrar verticalmente */
+        margin: 5px 0; /* Añadir margen vertical para separar los elementos */
     }
 
     .navbar-menu.active {
@@ -256,6 +255,33 @@ width:100%;
     .navbar-icon {
         display: block; /* Mostrar el icono de menú hamburguesa */
     }
+
+    ul {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: center; /* Centrar los elementos */
+        padding: 0; /* Sin padding en la lista */
+    }
+
+    .navbar-menu a {
+        color: white; /* Color del texto */
+        text-decoration: none; /* Sin subrayado */
+        text-transform: uppercase; /* Mayúsculas */
+        padding: 10px 15px; /* Espaciado interno arriba y abajo, y a los lados */
+        display: block; /* Hacer que el enlace ocupe todo el espacio del li */
+        transition: background-color 0.3s; /* Transición suave para el hover */
+        width: 100%; /* Asegurar que el enlace ocupe el 100% del ancho */
+        box-sizing: border-box; /* Incluir padding en el ancho total */
+    }
+
+    .navbar-menu a:hover {
+        background-color: #555; /* Color de fondo al pasar el mouse */
+    }
+
+    .fact-item {
+        flex: 1 1 100%; /* Cada elemento ocupa el 100% del ancho */
+        text-align: center; /* Centrar el texto en cada elemento */
+    }
+}
 
     ul {
         flex-direction: column; /* Cambiar a disposición vertical */
