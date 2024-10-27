@@ -5,14 +5,15 @@
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
-        overflow-x: hidden; /* Evita el scroll horizontal */
+    font-family: 'Oswald', sans-serif; /* Asegúrate de que esta línea esté presente */
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
 .container {
     width: 100%;
     overflow: hidden; /* Evita el desbordamiento */
 }
+
 .loader {
     position: fixed;
     top: 0;
@@ -31,9 +32,11 @@ body {
     height: auto;
     animation: spin 6s linear infinite; /* Animación de giro */
 }
-.logo{
-    color:white;
+
+.logo {
+    color: white;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -49,7 +52,7 @@ body {
 
 .nav-links li {
     margin-left: 20px;
-    margin-right:80px;
+    margin-right: 80px;
 }
 
 .nav-links a {
@@ -178,7 +181,8 @@ body {
         width: 80px; /* Ajusta el tamaño para pantallas pequeñas */
     }
 }
-/*Sobre mi*/
+
+/* Sobre mi */
 header {
     text-align: center;
     padding: 20px;
