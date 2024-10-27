@@ -229,7 +229,6 @@ width:100%;
         background-color: #333; /* Color de fondo */
         z-index: 10; /* Asegurar que el menú esté por encima de otros elementos */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mayor visibilidad */
-
     }
 
     .navbar-menu li {
@@ -242,9 +241,6 @@ width:100%;
     }
 
     .navbar-icon {
-        display: block; /* Mostrar el icono de menú hamburguesa */
-    }
-}
         display: block; /* Mostrar el icono de menú hamburguesa */
     }
 }
