@@ -38,11 +38,17 @@ body {
 }
 
 .navbar {
+    background-color: orange; /* Color de fondo naranja */
+    color: black; /* Color del texto negro */
+    padding: 20px 50px; /* Espaciado superior e inferior de 20px y lateral de 50px */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 28px; /* Tamaño de fuente más grande para el logo */
+    font-weight: bold;
 }
 
 .nav-links {
@@ -51,26 +57,19 @@ body {
 }
 
 .nav-links li {
-    margin-left: 20px;
-    margin-right: 80px;
+    margin: 0 15px; /* Espaciado entre los elementos de la lista */
 }
 
 .nav-links a {
-    color: white;
     text-decoration: none;
-    transition: color 0.3s;
-    display: flex;
-    align-items: center;
-}
-
-.nav-links a i {
-    margin-right: 5px; /* Espacio entre el icono y el texto */
+    color: black; /* Color del texto negro para los enlaces */
+    font-size: 20px; /* Tamaño de fuente más grande para los enlaces */
+    transition: color 0.3s ease; /* Transición suave para el color */
 }
 
 .nav-links a:hover {
-    color: orange;
+    color: #333; /* Color al pasar el mouse sobre los enlaces */
 }
-
 .menu-toggle {
     display: none;
     cursor: pointer;
