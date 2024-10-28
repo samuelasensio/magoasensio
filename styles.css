@@ -222,22 +222,20 @@ body {
 .company-img {
     width: 100%; /* Ajusta el ancho según sea necesario */
     height: auto; /* Mantiene la proporción de la imagen */
-    border-top: 5px solid #ff0000; /* Borde superior de 5px de grosor y color rojo */
-    border-top-left-radius: 20px; /* Redondeo de la esquina superior izquierda */
-    border-top-right-radius: 20px; /* Redondeo de la esquina superior derecha */
+    position: relative; /* Necesario para el pseudo-elemento */
 }
 
 .company-img::before {
     content: '';
     position: absolute;
-    top: -30px; /* Ajusta la posición para que la curvatura esté en la parte superior */
-    left: 0; /* Alinea a la izquierda */
-    right: 0; /* Alinea a la derecha */
-    height: 60px; /* Altura de la curvatura */
-    border-top-left-radius: 100px; /* Aumenta el radio para suavizar la curva */
-    border-top-right-radius: 100px; /* Aumenta el radio para suavizar la curva */
-    background: rgba(255, 0, 0, 0.5); /* Color de la curvatura */
-    z-index: -1; /* Coloca el pseudo-elemento detrás de la imagen */
+    top: -20px; /* Ajusta la posición hacia arriba */
+    left: 0;
+    right: 0;
+    height: 40px; /* Altura del borde estilo puerta */
+    background-color: #ff0000; /* Color del borde */
+    border-top-left-radius: 20px; /* Redondeo de la esquina superior izquierda */
+    border-top-right-radius: 20px; /* Redondeo de la esquina superior derecha */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
 }
 
 .company-img:hover {
