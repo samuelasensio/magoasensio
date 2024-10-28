@@ -207,17 +207,18 @@ body {
 
 .company-info {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Alinea el contenido al inicio para reducir espacio en blanco */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
     padding: 20px;
 }
 
 .company-item {
     display: flex;
-    align-items: center; /* Alinea la imagen y el texto verticalmente */
+    align-items: flex-start; /* Alinea la imagen y el texto verticalmente al inicio */
     max-width: 800px; /* Limita el ancho máximo del contenedor */
     margin: 20px;
 }
+
 .company-img {
     border: 5px solid transparent; /* Espacio para el borde que simula la mancha */
     border-top-left-radius: 50%; /* Bordes redondeados en la parte superior izquierda */
@@ -247,9 +248,9 @@ body {
     opacity: 0.8; /* Efecto de hover */
 }
 
-
 .company-text {
     text-align: left; /* Alinea el texto a la izquierda */
+    margin-top: 0; /* Elimina el margen superior para que el texto esté más arriba */
 }
 
 .company-title {
@@ -275,7 +276,6 @@ body {
 .footer-text {
     color: white; /* Color del texto del footer */
 }
-
 /* Estilos responsivos */
 @media (max-width: 768px) {
     .company-info {
