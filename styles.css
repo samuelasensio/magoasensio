@@ -236,8 +236,8 @@ body {
     right: 0; /* Alinea a la derecha */
     height: 50%; /* Ajusta la altura del overlay según sea necesario */
     background-color: rgba(255, 0, 0, 0.5); /* Color del overlay */
-    border-top-left-radius: 200px; /* Bordes redondeados en la parte superior izquierda */
-    border-top-right-radius: 200px; /* Bordes redondeados en la parte superior derecha */
+    border-top-left-radius: 400px; /* Bordes redondeados en la parte superior izquierda */
+    border-top-right-radius: 400px; /* Bordes redondeados en la parte superior derecha */
     mix-blend-mode: normal; /* Mezcla el color del overlay con la imagen */
     opacity: 0; /* Comienza invisible */
     transition: opacity 0.3s; /* Transición para el efecto de hover */
