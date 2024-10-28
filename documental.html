@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+    <style>
+        body {
+            background-color: #141414;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        #videoPlayer {
+            width: 80%;
+            margin: auto;
+            display: block;
+            border: 1px solid #333;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #222;
+        }
+        .button {
+            background-color: #e50914;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #f40612;
+        }
+    </style>
+</head>
+<body>
+
+    <video id="videoPlayer" controls>
+        <source src="tu_video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <div class="controls">
+        <button class="button" onclick="toggleSubtitles()">Subtítulos</button>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" onchange="setVolume(this.value)">
+    </div>
+
+    <script>
+        const video = document.getElementById('videoPlayer');
+
+        function setVolume(value) {
+            video.volume = value;
+        }
+
+        function toggleSubtitles() {
+            // Aquí puedes agregar lógica para mostrar/ocultar subtítulos
+            alert('Funcionalidad de subtítulos no implementada.');
+        }
+    </script>
+
+</body>
+</html>
