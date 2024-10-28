@@ -224,6 +224,8 @@ body {
     width: 400px; /* Ajusta el ancho según sea necesario */
     height: 800px; /* Aumenta la altura para que sea más alta */
     object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+     border-top-left-radius: 100px; /* Bordes redondeados en la parte superior izquierda */
+    border-top-right-radius: 100px; /* Bordes redondeados en la parte superior derecha */
 }
 
 .company-img::before {
