@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor de Video</title>
+    <title>Reproductor de Video Estilo Netflix</title>
     <style>
         body {
             background-color: #141414;
             color: white;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #videoContainer {
+            position: relative;
+            width: 80%;
         }
         #videoPlayer {
-            width: 80%;
-            margin: auto;
-            display: block;
+            width: 100%;
             border: 1px solid #333;
         }
         .controls {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
             display: flex;
             justify-content: space-between;
+            background-color: rgba(34, 34, 34, 0.8);
             padding: 10px;
-            background-color: #222;
+            border-radius: 5px;
         }
         .button {
             background-color: #e50914;
@@ -32,18 +44,22 @@
         .button:hover {
             background-color: #f40612;
         }
+        #volumeControl {
+            width: 100px;
+        }
     </style>
 </head>
 <body>
 
-    <video id="videoPlayer" controls>
-        <source src="sample-5s.mp4" type="video/mp4">
-        Tu navegador no soporta el elemento de video.
-    </video>
-
-    <div class="controls">
-        <button class="button" onclick="toggleSubtitles()">Subtítulos</button>
-        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" onchange="setVolume(this.value)">
+    <div id="videoContainer">
+        <video id="videoPlayer" controls>
+            <source src="sample-5s.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="controls">
+            <button class="button" onclick="toggleSubtitles()">Subtítulos</button>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" onchange="setVolume(this.value)">
+        </div>
     </div>
 
     <script>
