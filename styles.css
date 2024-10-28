@@ -207,7 +207,7 @@ body {
 
 .company-info {
     display: flex;
-    justify-content: flex-start; /* Alinea el contenido al inicio para reducir espacio en blanco */
+    justify-content: center; /* Centra el contenido */
     align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
     padding: 20px;
 }
@@ -251,6 +251,7 @@ body {
 .company-text {
     text-align: left; /* Alinea el texto a la izquierda */
     margin-top: 0; /* Elimina el margen superior para que el texto esté más arriba */
+    padding-top: 0; /* Asegura que no haya padding superior */
 }
 
 .company-title {
