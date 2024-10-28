@@ -140,10 +140,16 @@ body {
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color:white;
 }
 
+.footer-text {
+    color: white; /* Color del texto del footer */
+}
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -259,14 +265,14 @@ body {
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: black;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
 .footer-text {
-    color: #333; /* Color del texto del footer */
+    color: white; /* Color del texto del footer */
 }
 
 /* Estilos responsivos */
