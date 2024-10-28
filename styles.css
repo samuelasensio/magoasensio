@@ -221,8 +221,6 @@ body {
 
 .company-img {
     border: 5px solid transparent; /* Espacio para el borde que simula la mancha */
-    border-top-left-radius: 50%; /* Bordes redondeados en la parte superior izquierda */
-    border-top-right-radius: 50%; /* Bordes redondeados en la parte superior derecha */
     margin-right: 20px; /* Espaciado entre imagen y texto */
     transition: opacity 0.3s; /* Transición para el efecto de hover */
     position: relative; /* Necesario para el pseudo-elemento */
@@ -234,12 +232,12 @@ body {
 .company-img::before {
     content: '';
     position: absolute;
-    top: -50px; /* Ajusta la posición para que la curvatura esté en la parte superior */
+    top: -30px; /* Ajusta la posición para que la curvatura esté en la parte superior */
     left: 0; /* Alinea a la izquierda */
     right: 0; /* Alinea a la derecha */
-    height: 50px; /* Altura de la curvatura */
-    border-top-left-radius: 50%; /* Bordes redondeados en la parte superior izquierda */
-    border-top-right-radius: 50%; /* Bordes redondeados en la parte superior derecha */
+    height: 60px; /* Altura de la curvatura */
+    border-top-left-radius: 100px; /* Aumenta el radio para suavizar la curva */
+    border-top-right-radius: 100px; /* Aumenta el radio para suavizar la curva */
     background: rgba(255, 0, 0, 0.5); /* Color de la curvatura */
     z-index: -1; /* Coloca el pseudo-elemento detrás de la imagen */
 }
