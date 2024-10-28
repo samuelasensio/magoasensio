@@ -220,13 +220,11 @@ body {
 }
 
 .company-img {
-    border: 5px solid transparent; /* Espacio para el borde que simula la mancha */
-    margin-right: 20px; /* Espaciado entre imagen y texto */
-    transition: opacity 0.3s; /* Transición para el efecto de hover */
-    position: relative; /* Necesario para el pseudo-elemento */
-    width: 400px; /* Ajusta el ancho según sea necesario */
-    height: 800px; /* Aumenta la altura para que sea más alta */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-top: 5px solid #ff0000; /* Borde superior de 5px de grosor y color rojo */
+    border-top-left-radius: 20px; /* Redondeo de la esquina superior izquierda */
+    border-top-right-radius: 20px; /* Redondeo de la esquina superior derecha */
 }
 
 .company-img::before {
