@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor tipo Netflix</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <div class="video-container">
+        <video id="video" src="tu-video.mp4" controls></video>
+        
+        <div class="controls">
+            <button id="backward10" class="control-button">⏪ 10</button>
+            <button id="playPause" class="control-button">▶️</button>
+            <button id="forward10" class="control-button">10 ⏩</button>
+            <input type="range" id="progress" class="progress-bar" value="0">
+            <span id="time" class="time-display">0:00 / 2:12:14</span>
+            <button id="fullscreen" class="control-button">⛶</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
