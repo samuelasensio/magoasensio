@@ -47,3 +47,21 @@ const progress = document.getElementById('progress');
 const timeDisplay = document.getElementById('time');
 const fullscreenBtn = document.getElementById('fullscreen');
 
+//Reviews
+document.getElementById('reviewForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const review = document.getElementById('review').value;
+
+    const reviewContainer = document.getElementById('reviews');
+
+    const reviewDiv = document.createElement('div');
+    reviewDiv.classList.add('review');
+    reviewDiv.innerHTML = `<strong>${name}</strong><p>${review}</p>`;
+
+    reviewContainer.appendChild(reviewDiv);
+
+    // Limpiar el formulario
+    document.getElementById('reviewForm').reset();
+});
